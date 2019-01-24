@@ -2,17 +2,14 @@
 
 ## Setup
 
-1. Clone this repo to your `IdeaProjects` directory
-1. Open the project in IntelliJ
-1. Configure IntelliJ
-   - Mark the `src` directory as the sources root (right click on `src` -> "Mark
-     Directory as...")
-   - Configure the project sdk (File -> Project Structure), Choose 1.8 or 9
-1. Create a branch named `firstname-lastname` with your first and last names
+1. Copy the clone address of this repo to your clipboard. 
+1. Open up intelliJ and choose "Checkout from Version Control" or New->Project From Version Control->Git
+1. Paste the github clone address.
+1. Create a branch named `firstname-lastname` with your first and last names. See https://java.codeup.com/appendix/git/branching/ if you need directions to create a branch.
 1. Write your code and commit on your branch, but don't push your branch until
    the assessment is over
-1. When the assessment is over, push your branch to GitHub. **Don't push until
-   the assessment is over**.
+1. Ensure that all of your commits happen before the deadling.
+1. **Don't push until the assessment is over**.
 1. Verify that your branch is present on GitHub.
 
 ## Problems
@@ -82,7 +79,7 @@ A Total of 5 Points are available. One point will be awarded per problem if the
 provided solution fulfills all of the specifications for the problem.
 
 **If a class does not compile, no points can be awarded for it.** It would be
-wise to spend the last ~15 minutes of the assessment ensuring that your code is
+*wise* to spend the last ~15 minutes of the assessment ensuring that your code is
 error-free.
 
 ## Testing your Code
