@@ -8,13 +8,13 @@
 1. Create a branch named `firstname-lastname` with your first and last names. See https://java.codeup.com/appendix/git/branching/ if you need directions to create a branch.
 1. Write your code and commit on your branch, but don't push your branch until
    the assessment is over
-1. Ensure that all of your commits happen before the deadling.
+1. Ensure that all of your commits happen before the deadline.
 1. **Don't push until the assessment is over**.
 1. Verify that your branch is present on GitHub.
 
 ## Problems
 
-1. Create a class named `Assessment` inside of the `src` directory.
+1. In the`Assessment` class inside of the `src` directory.
 
     - Write a public static method named `square` that accepts an integer as
       input and returns that number times itself.
