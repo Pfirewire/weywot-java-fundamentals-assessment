@@ -62,9 +62,23 @@
 
     This method should:
 
-    - Take in an `List` of `User` objects
-    - The method should return a `List` of `User` objects where each user
+    - Take in an `ArrayList` of `User` objects
+    - The method should return a `ArrayList` of `User` objects where each user
       object's `firstName` and `lastName` properties are capitalized.
+      
+     Sample Input
+      
+     ```
+     harry potter
+     Hermione granger
+     ```
+     Sample Output
+      
+    ```
+    Harry Potter
+    Hermione Granger
+    ```
+
 
     Hints
 
