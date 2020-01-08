@@ -83,7 +83,7 @@
 
     Hints
 
-    - Check to make sure that each**User**'s `firstName` and `lastName` property are capitalized
+    - Check to make sure that each **User**'s `firstName` and `lastName` property are capitalized
     - If they are not, use the setter to capitalize the first letter of both the `firstName` and `lastName`.
 
 ## Grading
