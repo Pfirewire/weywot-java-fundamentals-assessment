@@ -23,7 +23,7 @@
       that works with both integers and doubles (use method overloading) and
       returns the result of adding the two passed numbers.
     - Write a public static method named `average` that takes in an array of
-      integers (not a `List`, an array) and returns the average as a double.
+      `int` numbers (not a `List`, an array) and returns the average as a `double`.
       (Hint: make sure the average of `[1, 2]` is `1.5`)
 
 1. Create a class named **Person** inside of `src`.
@@ -42,12 +42,11 @@
     - Add a protected instance property named `admin` that is a boolean. This
       property represents whether an instance of this class is an admin user.
     - Write the constructor on **User** that defines 3 parameters: the first name
-      for the person, the last name, and a boolean indicating whether or not
+      for the person, the last name, and a boolean indicating whether
       that user is an administrator. The corresponding properties of the object
       should be set based on the arguments passed to the constructor.
     - Write an instance method on the **User** class named `isAdmin` that returns
-      a boolean indicating whether or not the user is an administrator, based on
-      the `admin` property.
+      the boolean `admin` property that was set in the constructor.
 
 1. Create an interface named **Greeter**.
 
