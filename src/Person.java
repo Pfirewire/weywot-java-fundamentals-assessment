@@ -1,4 +1,4 @@
-public class Person {
+public class Person implements Greeter {
     private String firstName;
     private String lastName;
 
@@ -25,5 +25,9 @@ public class Person {
             this.firstName = firstName;
             this.lastName = lastName;
         }
+    }
+
+    public String sayHello() {
+        return String.format("Hello from %s %s.", firstName, lastName);
     }
 }
