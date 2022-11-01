@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Assessment {
 
     public static int square(int num) {
@@ -20,13 +22,16 @@ public class Assessment {
         return (double) total / nums.length;
     }
 
-    public static void main(String[] args) {
-//        System.out.println(square(4));
-//        System.out.println(square(12));
-//        System.out.println(sum(4,5));
-//        System.out.println(sum(4.5, 5.5));
-//        int[] nums = {5, 10, 15};
-//        System.out.println(average(nums));
+    public static ArrayList<User> capitalizeRecords(ArrayList<User> users) {
+        for(int i = 0; i < users.size(); i++) {
+            String[] firstNameArray = users.get(i).getFirstName().split("");
+            firstNameArray[0] = firstNameArray[0].toUpperCase();
+            users.get(i).setFirstName(String.join("", firstNameArray));
+            String[] lastNameArray = users.get(i).getLastName().split("");
+            lastNameArray[0] = lastNameArray[0].toUpperCase();
+            users.get(i).setLastName(String.join("", lastNameArray));
+        }
+        return users;
     }
 
 }
