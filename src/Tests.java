@@ -24,11 +24,8 @@ public class Tests {
         Person person1 = new Person("Steve", "Pflug");
         System.out.printf("Creating new person with \"Steve\" and \"Pflug\" passed in.%nFirst Name: %s%nLast Name: %s%n%n", person1.getFirstName(), person1.getLastName());
         System.out.printf("Attempting to create new person with \"Stephen\" and null passed in. This should throw an exception that is caught and handled.%n%n");
-        try {
-            Person person2 = new Person("Stephen", null);
-        } catch (IllegalArgumentException e) {
-            e.printStackTrace();
-        }
+
+        Person person2 = new Person("Stephen", null);
 
         divider();
 

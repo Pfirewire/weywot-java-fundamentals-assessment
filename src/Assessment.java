@@ -22,14 +22,24 @@ public class Assessment {
         return (double) total / nums.length;
     }
 
+    private static String[] splitWordIntoLetters(String word) {
+        return word.split("");
+    }
+
+    private static String capitalizeLetter(String letter) {
+        return letter.toUpperCase();
+    }
+
+    private static String formatName(String name) {
+        String[] letterArray = splitWordIntoLetters(name);
+        letterArray[0] = capitalizeLetter(letterArray[0]);
+        return String.join("", letterArray);
+    }
+
     public static ArrayList<User> capitalizeRecords(ArrayList<User> users) {
         for(int i = 0; i < users.size(); i++) {
-            String[] firstNameArray = users.get(i).getFirstName().split("");
-            firstNameArray[0] = firstNameArray[0].toUpperCase();
-            users.get(i).setFirstName(String.join("", firstNameArray));
-            String[] lastNameArray = users.get(i).getLastName().split("");
-            lastNameArray[0] = lastNameArray[0].toUpperCase();
-            users.get(i).setLastName(String.join("", lastNameArray));
+            formatName(users.get(i).getFirstName());
+            formatName(users.get(i).getLastName());
         }
         return users;
     }
